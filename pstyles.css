@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aliceblue;
+    background-color:midnightblue;
     margin: 0%;
 }
 nav{
@@ -16,6 +16,7 @@ nav{
     background-color:var(--color1);
     width:100%;
     gap:20px;
+    position:fixed;
 }
 nav p{
     display: flex;
@@ -45,10 +46,10 @@ nav p:hover{
 #welcome{
     border:1px solid var(--color2);
     width:100vw;
-    height:700px;
+    height:900px;
     background:linear-gradient(hsl(0, 1%, 28%),hsl(0, 1%, 18%),hsl(0, 1%, 8%));
 }
-i{
+#welcome i{
     font-size: 6em;
     color:hsl(90, 49%, 89%);
     position: absolute;
@@ -57,7 +58,7 @@ i{
 }
 
 h1:first-of-type{
-    margin-top:300px;
+    margin-top:400px;
 }
 h1{
     text-align:center;
@@ -65,16 +66,58 @@ h1{
     font-size: 2.5em;
     color:hsl(90, 49%, 89%);
     font-family: monospace;
-    margin:25px 0;
+    margin:40px 0;
 }
 @media (min-width:600px){
-    i{
-        left:720px;
+    #welcome i{
+        left:700px;
         font-size: 8em;
         top:250px;
         left:690px;
     }
     h1{
         font-size: 4.5em;
+    }
+}
+#projects{
+    display:block;
+}
+h3{
+    padding:0;
+    color:hsl(90, 49%, 89%) ;
+    font-family: monospace;
+    text-align: center;
+    font-size: 3em;
+}
+.survey{
+    width:300px;
+    height:400px;
+    margin:10px 100px 0 100px;
+    border-radius:15px;
+    object-fit:cover;
+}
+h4{
+    text-align:center;
+    width:300px;
+    margin-left: 100px;
+    margin-top: 0;
+    height:50px;
+    padding-top:15px;
+    background-color:black;
+    color:orangered;
+    border-radius: 15px;
+    font-family:Poppins;
+}
+h4 i{
+    padding:0 10px;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+h4:hover i{
+    opacity: 100;
+}
+@media (min-width:600px){
+    #projects{
+        display:grid;
     }
 }
