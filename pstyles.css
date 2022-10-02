@@ -19,11 +19,22 @@ nav p{
     justify-content: center;
     font-family: Poppins;
     font-size: 1.3em;;
-    height:80px;
+    height:70px;
     width:100px;
-    margin:0;
+    margin:10px 0;
+    transition: transform 200ms ease-in-out;
 }
 nav p:hover{
     background-color: hsl(90, 100%, 40%);
-    transform: scaleX(100px);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+@media (min-width:600px){
+    nav p{
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    nav{
+        gap:40px;
+    }
 }
