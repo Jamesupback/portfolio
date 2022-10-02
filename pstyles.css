@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    margin: 0%;
+}
+nav{
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    background-color: chartreuse;
+    width:100%;
+    gap:20px;
+}
+nav p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 1.3em;;
+    height:80px;
+    width:100px;
+    margin:0;
+}
+nav p:hover{
+    background-color: hsl(90, 100%, 40%);
+    transform: scaleX(100px);
+}
