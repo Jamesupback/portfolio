@@ -131,10 +131,12 @@ h4:hover i{
 }
 #contact{
     background-color: hsl(0, 0%, 16%);
+    height:400px;
 }
 .ctitle{
     text-align: center;
-    margin:10px auto !important;
+    margin:80px auto !important;
+    padding-top:100px;
     font-size: 2.5em;
 }
 .contacto{
@@ -147,7 +149,6 @@ h4:hover i{
     color: hsl(90, 49%, 89%);
     font-family: Poppins;
     font-size: larger;
-    display: inline-block;
 }
 .social i{
     font-size: 2em;
